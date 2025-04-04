@@ -168,12 +168,21 @@ for period_start, period_end in date_ranges:
                 if date == "날짜 추출 실패":
                     date = search_date
                 
+                # 제목이 없는 경우 또는 키워드가 포함되지 않은 경우 저장하지 않음
+                if not title.strip() or keyword not in title:
+                    print(f"키워드가 포함되지 않은 기사 건너뜀: {title[:30]}...")
+                    continue
+                
                 # 데이터 저장
                 data_list.append([title, press, date, content, news_url])
                 print(f"기사 처리: {title[:30]}...")
                 
             except Exception as e:
-                # 예외 발생 시 검색 결과 정보로 저장
+                # 예외 발생 시 검색 결과 정보로 저장 (제목이 없는 경우 또는 키워드가 포함되지 않은 경우 건너뜀)
+                if not search_title.strip() or keyword not in search_title:
+                    print(f"키워드가 포함되지 않은 기사 건너뜀: {search_title[:30]}...")
+                    continue
+                
                 data_list.append([search_title, search_press, search_date, f"본문 추출 실패: {str(e)}", news_url])
                 print(f"기사 처리 실패: {search_title[:30]}... - {str(e)}")
             
