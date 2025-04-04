@@ -1,0 +1,2 @@
+sequence_length=60
+period=60
