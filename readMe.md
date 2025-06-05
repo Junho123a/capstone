@@ -38,8 +38,8 @@
 
 ## __사용한 모델__
 
-- DLinear, cnn, 그거 저거 이거 저거
-
+- DLinear, cnn, koBert, 그거 저거 이거 저거 등등
+- 
 ---
 
 
