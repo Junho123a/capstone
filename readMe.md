@@ -6,6 +6,12 @@
 
 뉴스 기사를 활용한 XAI 주가 예측 프로그램 만들고 추천하는 로보 어드바이저 생성, TSF(시계열 예측)을 위한 알고리즘 작성
 
+---
+
+## __프로젝트 프로그램 링크__
+
+[프로그램 파일 다운로드](https://drive.google.com/file/d/1KQLly4Qs9jhHaxLev4ZkVQU6K3kqRboY/view?usp=drive_link)
+
 
 ---
 
